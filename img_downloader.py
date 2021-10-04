@@ -16,7 +16,7 @@ def imagedown(search, folder):
     os.chdir(os.path.join(os.getcwd(), folder))
     box.send_keys(search)
     box.send_keys(Keys.ENTER)
-    driver.execute_script("document.body.style.zoom='200%'")
+    #driver.execute_script("document.body.style.zoom='200%'")
     # last_height = driver.execute_script('return document.body.scrollHeight')
     # while True:
     #     driver.execute_script('window.scrollTo(0,document.body.scrollHeight)')
@@ -38,9 +38,9 @@ def imagedown(search, folder):
     os.chdir("../")
 
 
-# imagedown('Robert Downey Jr', 'iron')
-imagedown('Chris Evans', 'cap1')
-# imagedown('Chris Hemsworth', 'thor')
-# imagedown('Mark Ruffalo', 'hulk')
-# imagedown('Scarlett Johanson', 'widow')
-# imagedown('Jeremy Renner', 'hawk')
+imagedown('Robert Downey Jr', 'iron')
+imagedown('Chris Evans', 'cap')
+imagedown('Chris Hemsworth', 'thor')
+imagedown('Mark Ruffalo', 'hulk')
+imagedown('Scarlett Johanson', 'widow')
+imagedown('Jeremy Renner', 'hawk')
